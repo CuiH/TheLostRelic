@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="60" height="25" tilewidth="70" tileheight="70" nextobjectid="8">
+ <tileset firstgid="1" name="wall" tilewidth="70" tileheight="70">
+  <image source="wall_tile.png" width="70" height="70"/>
+ </tileset>
+ <tileset firstgid="2" name="board" tilewidth="70" tileheight="70">
+  <image source="booard.png" width="70" height="70"/>
+ </tileset>
+ <tileset firstgid="3" name="ladder" tilewidth="70" tileheight="70">
+  <image source="ladder.png" width="70" height="70"/>
+ </tileset>
+ <tileset firstgid="4" name="treasure" tilewidth="70" tileheight="70">
+  <image source="treasure.png" width="70" height="70"/>
+ </tileset>
+ <tileset firstgid="5" name="meta" tilewidth="70" tileheight="70">
+  <image source="meta_tiles.png" width="280" height="70"/>
+  <tile id="0">
+   <properties>
+    <property name="food" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="Collidable" value="true"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="win" value="true"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="fire" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="wall" width="60" height="25">
+  <data encoding="base64" compression="zlib">
+   eJztw0ENAAAMA6Grf9MTsS8krJqqqqqqqvp60UQF3Q==
+  </data>
+ </layer>
+ <layer name="board" width="60" height="25">
+  <data encoding="base64" compression="zlib">
+   eJzt1EEKACEMwMDi/x/tecGLuDZVM+BRoWJsEdEeWjvtPr8a5+XRPd3Ur5SN7mmmKfuVvuh2q/4Vo3si9lKcN2fvKrqnU/qVKvrz/dNt2q9eQ/eUvToZigM5
+  </data>
+ </layer>
+ <layer name="ladder" width="60" height="25">
+  <data encoding="base64" compression="zlib">
+   eJztlkEOABAQxCT+/2c/EGLZoj3LzNRpS+FRswccRt+3ofhSdvSI3KgvD31ZzOyju4ygb8xbKgTfrH+0115787puum30zcnYkbUr/ybfEQgbZljdqy8bff+jAUKKAJE=
+  </data>
+ </layer>
+ <layer name="barrier" width="60" height="25">
+  <data encoding="base64" compression="zlib">
+   eJztzjENAAAIA7Ad+NeMjCXQKmgCAH9MOwAAAACctVlQAAU=
+  </data>
+ </layer>
+ <layer name="meta" width="60" height="25" opacity="0.43">
+  <data encoding="base64" compression="zlib">
+   eJztkkEOgDAIBLlY/f+LfYGNCMKk3Un21AC7lGFmA6YT4KFSBvCwUt6/yO59Betpe6fdhvLy9MZjBcfkzZMlQvdfeG+G4ll52Xl3gXY3mqu5WXO8fK2L1kbI3m1Gj6q/Vt5183rI6tMBaefEm1Vetp787kL3/jt0A/QrGrU=
+  </data>
+ </layer>
+ <objectgroup name="objects">
+  <object id="2" name="PlayerPoint" x="150.848" y="1585.61" width="43.7576" height="40.7273"/>
+  <object id="4" name="FirePoint" x="3072.42" y="167.881" width="54.5455" height="54.5455"/>
+  <object id="7" name="WinPoint" x="2616" y="215" width="19" height="19"/>
+ </objectgroup>
+</map>
